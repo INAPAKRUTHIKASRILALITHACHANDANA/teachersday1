@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Guiding Lights":"Celebrating those who ignite our minds and illuminate our paths."</title>
+    <link rel="shortcut icon" href="teacher1.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <style>
+        body{
+            background: linear-gradient(to right, #fcec96, #c9eaf2, #d6f8cf);
+            align-items: center;
+        }
+        .content{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        function submit(){
+            document.getElementById("card").style.display="block";
+            document.getElementById("name").innerHTML=document.getElementById("Name").value;
+            document.getElementById("Name").value = "";
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <section>
+        <div class="input-group" style="margin-top: 300px;">
+            <button class="btn btn-primary"><span class="bi bi-person-fill"></span></button>
+            <input type="text" class="form-control" id="Name" placeholder="To proceed, please enter your name. This helps us address you appropriately and provide a personalized experience.">
+            <button class="btn btn-warning" onclick="submit()">Submit</button>
+        </div>
+    </section>
+    <section>
+        <div class="wishes" style="display: none;" id="card">
+            <div class="content">
+                <p>Thank you for being a guiding light and an inspiration. Your passion for teaching and your dedication to your students make you truly exceptional.</p>
+                <p> Happy Teacher's Day! <h6 id="name"></h6> </p>
+                <a href="teachersday2.html" target="_blank"><button class="btn btn-success">Next</button></a>
+            </div>
+        </div>
+    </section>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
